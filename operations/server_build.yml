@@ -1,0 +1,11 @@
+---
+- Name: Provision new VM
+  hosts: all
+  tasks:
+    - name: Building VM
+      debug:
+        msg: "{{ ansible_hostname }}"
+    - name: wait
+      pause:
+        seconds: 5
+        prompt: 'Done!'

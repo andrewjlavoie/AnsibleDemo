@@ -1,0 +1,9 @@
+---
+- name: Install and Configure Red Hat Insights
+  hosts: all
+  roles:
+    - role: insights-role
+        vars:
+          redhat_portal_username: "{{ redhat_user }}"
+          redhat_portal_password: "{{ redhat_pass }}"
+          

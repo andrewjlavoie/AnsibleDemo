@@ -1,0 +1,9 @@
+---
+- name: Update All Packages
+  hosts: all
+  tasks:
+    - name: Update All
+      yum:
+        name: '*'
+        state: latest
+        exclude: kernel*

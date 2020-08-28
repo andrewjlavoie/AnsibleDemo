@@ -1,0 +1,11 @@
+---
+- name: Installs/Updates OpenSCAP Security Scanning packages
+  hosts: all
+  tasks:
+    - name: Yum install packages
+      yum:
+        name:
+          - scap-security-guide
+          - openscap-scanner
+          - openscap
+        state: latest

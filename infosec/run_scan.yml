@@ -2,7 +2,13 @@
 - name: Runs Insights Clients OpenSCAP Scan
   hosts: all
   tasks:
-    - name: Ensure OpenSCAP packages are installed.
-      import_playbook: compliance_packages.yml
+    - name: Installs/Updates OpenSCAP Security Scanning packages
+      yum:
+        name:
+          - scap-security-guide
+          - openscap-scanner
+          - openscap
+        state: latest
+        
     - name: Execute Insights CLI
       shell: insights-client --compliance

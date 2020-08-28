@@ -1,0 +1,6 @@
+---
+- name: Runs Insights Clients OpenSCAP Scan
+  hosts: all
+  tasks:
+    - name: Execute Insights CLI
+      shell: insights-client --compliance

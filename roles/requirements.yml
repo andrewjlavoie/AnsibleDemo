@@ -1,3 +1,6 @@
 # Adds the insights-role to install and configure Insights Client for RHEL
 - name: insights-role
   src: git+https://github.com/RedHatInsights/insights-client-role.git
+
+- name: hipaa-role
+  src: git+https://github.com/RedHatOfficial/ansible-role-rhel8-hipaa.git

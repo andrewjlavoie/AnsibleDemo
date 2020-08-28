@@ -1,0 +1,5 @@
+---
+- name: Deploys HIPAA Configurations
+  hosts: all
+  roles:
+    - role: hipaa-role

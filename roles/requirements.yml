@@ -2,5 +2,6 @@
 - name: insights-role
   src: git+https://github.com/RedHatInsights/insights-client-role.git
 
+# Adds the hipaa-role to deploy/check compliant configurations
 - name: hipaa-role
   src: git+https://github.com/RedHatOfficial/ansible-role-rhel8-hipaa.git
